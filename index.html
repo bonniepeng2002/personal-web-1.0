@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Applied responsive web design principles by using media queries and REMs so the website can look appealing on any screen sizes -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bonnie Peng | always learning</title>
+    <link rel="icon" href="pictures/icon3.png">
+    <!-- font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&family=Roboto+Mono:wght@400;700&display=swap"
+        rel=stylesheet>
+    <!--scroll reveal CDN-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <!-- header -->
+    <header>
+        <div class="container">
+            <!--contains navigation-->
+            <nav class="">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+
+                </div>
+                <a href="index.html" class="logo"><img src="pictures/logo.png" alt="BP"
+                        style="width:5%;height:5%;margin-top:2.4rem;"></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="photography.html" class="nav-link">Photography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#my-projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#social" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--header ends-->
+
+    <!-- hello -->
+
+    <section class="hello" id="hello">
+
+        <div class="container">
+            <h2 class="sub-headline">
+                Hello!
+            </h2>
+            <h1 class="headline"> I'm Bonnie. </h1>
+            <div class="headline-description">
+                <div class="separator">
+                    <div class="line line-left"></div>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <div class="line line-right"></div>
+
+                </div>
+                <div class="single-animation">
+                    <a href="#my-story" class="btn cta-btn">My Story</a>
+                </div>
+            </div>
+        </div>
+        <div class="waveWrapper waveAnimation">
+            <div class="waveWrapperInner bgTop">
+                <div class="wave waveTop" style="background-image: url('pictures/oie_transparent.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgMiddle">
+                <div class="wave waveMiddle" style="background-image: url('pictures/wave-mid.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgBottom">
+                <div class="wave waveBottom" style="background-image: url('pictures/wave-bot.png')"></div>
+            </div>
+        </div>
+    </section>
+    <!-- hello ends -->
+
+    <!-- my story -->
+    <section class="my-story" id="my-story">
+        <div class="container">
+            <div class="info">
+                <!-- info -->
+                <div class="description padding-right animate-left">
+                    <!-- description -->
+                    <div class="global-headline">
+                        <h2 class="sub-headline-dark">
+                            Hey, you've found me!
+                        </h2>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>It's nice to meet you! <br> My name is Bonnie Peng and I am an aspiring medical software
+                        developer, a perfect blend of both of my passions in healthcare and tech. <br> I aim to improve
+                        global health through code and ensure all new medical technologies are more effective than the last. <br><br>
+                        Currently living in Halifax, Nova Scotia, I love spending my free time with my
+                        camera at the waterfront, kidnapping my friends' dogs for hikes, gazing at the beauty of
+                        dark mode IDE's and telling people I like coding in dark mode better than light mode so I don't
+                        lose my friends ;) </p>
+                </div>
+                <div class="info-img animate-right">
+                    <img src="pictures/about me.JPG" alt="me!">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- my story ends -->
+
+    <!-- my passions -->
+
+    <!-- https://techmemorise.blogspot.com/2020/05/image-slider-carousel-javascript.html -->
+
+    <section class="my-passions" id="my-passions">
+        <div class="container">
+            <div class="passions">
+                <!-- passions -->
+                <div class="description animate-top">
+                    <!-- description -->
+                    <div class="global-headline">
+                        <h2 class="sub-headline-dark">
+                            My Passions
+                        </h2>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                </div>
+
+                <!-- slideshow  -->
+
+                <div class="slider animate-bottom">
+                    <div class="slides">
+
+                        <div class="slide">
+                            <div class="slide-data">
+                                <h1>photography</h1>
+                                <p>Photography very quickly became one of the biggest parts of my life, and it's a hobby
+                                    that I know I'll never let go of. The liberty, the inspiring community,
+                                    and the thrill of its possibilities continuously draws me to my camera and into a
+                                    new world with every picture.
+                                    <br><br>Portrait shoots are easily my favourite, and I'm proudly running a business
+                                    which provides free photoshoots for aspiring actors and models to help
+                                    kickstart their portfolio.
+                                    <br><br>Well? Say cheese!
+                                </p>
+                                <div class="single-animation">
+                                    <a href="photography.html" target="_blank" class="btn cta-btn">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide-data">
+                                <h1>design & coding</h1>
+                                <p>My passion for creating something of my own drew me right to programming! <br>
+                                    Integrating personality and creativity into technology is one of my biggest goals as
+                                    a programmer, and I hope to use this
+                                    side of tech to inspire those around me, and break the stereotype that tech is a
+                                    scary industry.
+                                    <br><br>
+                                    I'm currently pursuing a B.Sc. in Computer Science at the University of Waterloo,
+                                    which I hope to extend into a masters degree.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide-data">
+                                <h1>medicine</h1>
+                                <p>I've always been curious about the world of medicine (I originally planned go to med
+                                    school!) and dreamed of
+                                    working alongside the medical professionals who have supported me all my life.
+                                    <br><br> I always strive to engage in healthcare communities, and I'm very happy
+                                    to be the Web Designer for uWaterloo's
+                                    <em> Women in Healthcare</em> club! Joining this community has allowed me to learn
+                                    so much about my peers in medicine,
+                                    as well as participate in panel talks with female healthcare leaders across the
+                                    country.
+                                    <br><br>
+                                    I'll tell you a secret - I've always thought that the intersection of health and
+                                    technology would be my particular place in the world,
+                                    and I can't wait to see where this path takes me.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="arrows prev" onclick="plusslide(-1)">
+                        <span><i class="fas fa-angle-left"></i></span>
+                    </button>
+                    <button class="arrows next" onclick="plusslide(1)">
+                        <span><i class="fas fa-angle-right"></i></span>
+                    </button>
+
+                    <div class="dots">
+                        <span onclick="currentslide(1)"></span>
+                        <span onclick="currentslide(2)"></span>
+                        <span onclick="currentslide(3)"></span>
+                    </div>
+                </div>
+
+                <!-- slideshow ends  -->
+
+            </div>
+        </div>
+    </section>
+    <!-- my passions ends -->
+
+    <!-- my projects  -->
+    <section class="my-projects" id="my-projects">
+        <div class="container">
+            <div class="global-headline animate-bottom">
+                <h2 class="sub-headline-dark">
+                    My Projects
+                </h2>
+                <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+            </div>
+
+            <div class="projects">
+                <div class="content">
+                    <div class="row">
+
+                        <div class="column animate-left">
+                            <div class="item">
+                                <a href="https://github.com/bonniepeng2002/Missile-Command" target="_blank">
+                                    <img class="screenshot" src="pictures/missilecommand.png" alt="Missile Command">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <b>Missile Command</b>
+                                            <br><br> A personalized recreation of Atari's famous <em>Missile
+                                                Command</em>. Complete with a neon title screen!
+                                            <br><br> <em>Tools: Python, Turtle Graphics</em>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="column2 animate-bottom">
+                            <div class="item">
+                                <a href="https://devpost.com/software/safe-at-school" target="_blank">
+                                    <img class="screenshot" src="pictures/sas.jpg" alt="Safe at School">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <b>Safe at School, winner of Best Presentation at IgnitionHacks, 2020. </b>
+                                            <br><br> A choose-your-own-adventure game teaching children safety
+                                            procedures at school to protect themselves from COVID-19.
+                                            <br><br> <em>Tools: HTML, CSS, JavaScript, <br> Bootstrap, WebSpeech
+                                                API</em>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://github.com/bonniepeng2002/corona-snake" target="_blank">
+                                    <img class="screenshot" src="pictures/snake.png" alt="Snake">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <b>Snake</b>
+                                            <br><br> A remake of <em>Snake</em>! Brought to life during the chaos that
+                                            was March 2020; a little quarantine project :)
+                                            <br><br> <em>Tools: Python, Turtle Graphics</em>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="column animate-right">
+                            <div class="item">
+                                <a href="https://github.com/bonniepeng2002/GooseAttackBot" target="_blank">
+                                    <img class="screenshot" src="pictures/goose.png" alt="Mr. Goose Bot">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <b>Mr. Goose Discord Bot</b>
+                                            <br><br> A Discord bot taking on the personality of the notoriously known
+                                            geese at the University of Waterloo!
+                                            Mr. Goose provides personalized responses to various commands (took
+                                            <em>so</em> much creative liberty with this one ;)).
+                                            <br><br> <em>Tools: Python, Discord.py , UptimeRobot</em>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- my projects ends  -->
+
+    <!-- current inspirations -->
+    <section class="inspirations">
+        <div class="container">
+            <div class="current-inspire">
+                <div class="global-headline">
+                    <h2 class="sub-headline-dark">
+                        Currently Inspired by...
+                    </h2>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                </div>
+
+                <!-- content goes here -->
+                <div class="all-items">
+
+                    <div class="inspo animate-bottom">
+                        <img src="pictures/ui.png" alt="UI Design">
+                        <h2>UI Design IG Accounts</h2>
+                        <p>
+                            <br> Since I started making this site, I've began to dig deep into the rabbit-hole of UI
+                            design, specifically <em>why</em> certain pages look the way they do, and how the design of a website can achieve
+                            a desired result from the audience.
+                            Some crazy psychology going on!
+                            <br><br>
+                            Some accounts I've been loving are 
+                            <a href="https://www.instagram.com/ui_gradient/" target="_blank">@ui_gradient</a> 
+                            and <a href="https://www.instagram.com/uix.osm/" target="_blank">@uix.osm</a>!
+                        </p>
+                    </div>
+
+                    <div class="inspo animate-top">
+                        <img src="pictures/nsisp.jpg" alt="My Peers">
+                        <h2>New Friends!</h2>
+                        <p>
+                            <br> Being surrounded by like-minded people has definitely made me grow in the best way possible.
+                            Especially since starting at uWaterloo, being in a community
+                            of those with similar aspirations and cultural backgrounds as me has helped me become so much more 
+                            comfortable with my identity. 
+                            <br><br>
+                            They don't know it, but everyone I've met so far have uniquely helped me reach where I am with myself today :)
+                        </p>
+                    </div>
+
+                    <div class="inspo animate-bottom">
+                        <img src="pictures/icecream.jpg" alt="Stretchy Ice Cream">
+                        <h2>Stretchy Ice Cream</h2>
+                        <p>
+                            <br> Someone really looked at ice cream and said "How can I make this <em>more</em> fun??". But seriously,
+                            I love stretchy ice cream so much, it's the best comfort food and I can't wait to try the real thing in Syria one day!
+                            <br><br>
+                            There's this place nearby that I haven't been able to visit in ages... I miss you 
+                            <a href="https://www.facebook.com/BoozaEmessaice/" target="_blank">Booza Emessa</a> :(
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- current inspirations end  -->
+
+    <!-- my resume  -->
+    <section class="my-resume" id="resume">
+        <div class="container">
+            <div class="seeking">
+                <!-- job seeking -->
+                <div class="resume padding-right animate-left">
+                    <!-- resume -->
+                    <div class="global-headline">
+                        <h2 class="sub-headline-dark">
+                            Looking for Summer 2021 opportunities!
+                        </h2>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>Currently seeking full-time internship opportunities in software engineering and full stack
+                        development. Available for remote positions or in-person within the Halifax area.</p>
+                    <div class="single-animation">
+                        <a href="mailto:bonnie.peng@uwaterloo.ca" target="_blank" class="btn cta-btn">Contact Me</a>
+                    </div>
+                </div>
+                <!-- 
+                        <ul class="job-list-left">
+                            <li class="job-left">Full Stack Development</li>
+                        </ul>
+                        <ul class="job-list-right">
+                            <li class="job-left">Software Engineering</li>
+                        </ul>
+                        <ul class="job-list-left">
+                            <li class="job-left">Web Development</li>
+                        </ul>
+                        <ul class="job-list-right">
+                            <li class="job-left">Mobile Development</li>
+                        </ul> -->
+                <div class="pdf-file animate-right">
+                    <iframe src="https://drive.google.com/file/d/1EKJaMouJ_RFhB99JyGyhP5guvGHQa8w9/preview" width="100%"
+                        height="500"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- resume ends -->
+
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hello"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-divider animate-bottom">
+                    <div class="social-media" id="social">
+                        <h4>Let's Connect!</h4>
+                        <ul class="social-icons">
+                            <li><a href="https://www.linkedin.com/in/bonniepeng/" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li><a href="https://github.com/bonniepeng2002" target="_blank"><i
+                                        class="fab fa-github"></i></a></li>
+                            <li><a href="https://www.instagram.com/bonniepeng_/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                            </li>
+                            <li><a href="mailto:bonniepeng2002@gmail.com"><i class="far fa-envelope"></i></a></li>
+                        </ul>
+                        <ul class="copyright">
+                            <li>&copy; 2020 Made by Bonnie Peng
+                                <!-- Built with <i class="far fa-heart"></i>  -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>

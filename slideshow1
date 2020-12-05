@@ -1,0 +1,252 @@
+HTML
+
+<div class="slider">
+                    <div class="slider-wrapper flex">
+
+                        <!-- content -->
+
+                        <div class="slide flex">
+                            <div class="slide-image slider-link prev">
+                                <img src="pictures/camera.jpg">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="slide-content">
+                                <div class="slide-title">photography</div>
+                                <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero
+                                    oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis
+                                    invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                                <div class="single-animation">
+                                    <a href="photography.html" class="btn cta-btn">Learn More</a>
+                                </div>
+                            </div>
+                        </div>                       
+
+                        <div class="slide flex">
+                            <div class="slide-image slider-link next"><img
+                                    src="https://goranvrban.com/codepen/img5.jpg">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="slide-content">
+                                <div class="slide-title">coding</div>
+                                <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero
+                                    oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis
+                                    invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                                <div class="single-animation">
+                                    <a href="#" class="btn cta-btn">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide flex">
+                            <div class="slide-image slider-link next"><img
+                                    src="https://goranvrban.com/codepen/img6.jpg">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="slide-content">
+                                <div class="slide-title">volunteer</div>
+                                <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero
+                                    oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis
+                                    invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                            </div>
+                        </div>
+
+                        <div class="slide flex">
+                            <div class="slide-image slider-link next"><img
+                                    src="https://goranvrban.com/codepen/img6.jpg">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="slide-content">
+                                <div class="slide-title">fashion</div>
+                                <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero
+                                    oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis
+                                    invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="arrows">
+                        <a href="#" title="Previous" class="arrow slider-link prev"></a>
+                        <a href="#" title="Next" class="arrow slider-link next"></a>
+                    </div>
+                </div>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+                <script src="script.js"></script>
+
+
+CSS 
+
+.slider {
+    /* -webkit-font-smoothing: antialiased;  */
+    font-family: var(--main-font);
+}
+.flex { 
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-flex-direction: row;  
+    flex-direction: row; 
+    -webkit-justify-content: flex-start; 
+    justify-content: flex-start;
+}
+.slider-wrapper div {
+    position: relative;
+}
+
+/* .slide-image {
+    height: 100%;
+}
+.slide-image img {
+    width: 100%; 
+    cursor: pointer;
+} */
+
+.slide-content {
+    color: var(--main-font-color); 
+    /* padding: 3vw 18vw 3vw 9vw; */
+}
+.slide-title {
+    font-family: var(--main-font);
+    color: var(--main-font-color-dark);
+    font-size: 3rem; 
+    font-weight: 600; 
+    letter-spacing: 0.1vw; 
+    line-height: 1.55vw; 
+    padding-bottom: 1.8vw;
+}
+.slide-text {
+    font-size: 1.8rem; 
+    line-height: 1.4; 
+    padding-bottom: 2vw;
+}
+
+/* .slide-bullet {
+    width: 0.5vw; 
+    height: 0.5vw; 
+    background-color: #690b8f; 
+    border-radius: 200%; 
+    position: relative; 
+    margin-left: 1.2vw;
+} */
+
+.slide-nav {
+    margin-left: 64vw; 
+    margin-top: -3vw;
+}
+
+/* div.overlay-purple {
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    top: 0; 
+    transition: 0.5s ease all;
+} */
+
+div.overlay-purple:hover {
+    background-color: rgba(30, 9, 43, 0.5);}
+
+.arrows{
+    width: 3.5vw; 
+    margin-top: -4.8vw; 
+    margin-left: 72vw; 
+    position: relative;
+}
+.arrow {
+    display: inline-block; 
+    position: absolute; 
+    width: 1.2vw; 
+    height: 1.2vw; 
+    background: transparent; 
+    text-indent: -9999px; 
+    border-top: 0.15vw solid #fff; 
+    border-left: 0.15vw solid #fff; 
+    border-width: 1rem;
+    transition: all .3s ease-in-out; 
+    text-decoration: none; 
+    color: transparent;
+}
+.arrow:hover {
+    border-color: #520b68; 
+    border-width: 0.5rem;
+}
+.arrow:before {
+    display: block; 
+    height: 200%; 
+    width: 200%; 
+    margin-left: -50%; 
+    margin-top: -50%; 
+    content: ""; 
+    transform: rotate(45deg);
+}
+.arrow.prev {
+    transform: rotate(-45deg); 
+    left: 0;
+}
+.arrow.next {
+    transform: rotate(135deg); 
+    right: 0;
+}
+
+
+JAVASCRIPT
+
+(function ($) {
+
+    $(document).ready(function () {
+
+        var s = $('.slider'),
+            sWrapper = s.find('.slider-wrapper'),
+            sItem = s.find('.slide'),
+            btn = s.find('.slider-link'),
+            sWidth = sItem.width(),
+            sCount = sItem.length,
+            slide_title = s.find('.slide-title'),
+            slide_text = s.find('.slide-text'),
+            slide_image = s.find('.slide-image img'),
+            sTotalWidth = sCount * sWidth;
+
+        sWrapper.css('width', sTotalWidth);
+        sWrapper.css('width', sTotalWidth);
+
+        var clickCount = 0;
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+
+            if ($(this).hasClass('next')) {
+
+                (clickCount < (sCount - 1)) ? clickCount++ : clickCount = 0;
+            } else if ($(this).hasClass('prev')) {
+
+                (clickCount > 0) ? clickCount-- : (clickCount = sCount - 1);
+            }
+            TweenMax.to(sWrapper, 0.4, { x: '-' + (sWidth * clickCount) })
+
+
+            //CONTENT ANIMATIONS
+
+            var fromProperties = { autoAlpha: 0, x: '-50', y: '-10' };
+            var toProperties = { autoAlpha: 0.8, x: '0', y: '0' };
+
+            TweenLite.fromTo(slide_image, 1, { autoAlpha: 0, y: '40' }, { autoAlpha: 1, y: '0' });
+            TweenLite.fromTo(slide_title, 0.6, fromProperties, toProperties);
+            TweenLite.fromTo(slide_text, 0.8, fromProperties, toProperties);
+
+        });
+
+    });
+})(jQuery);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
