@@ -524,11 +524,6 @@ header{
 
 /* slideshow  */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .slide .btn{
     margin-top: 0.8rem;
