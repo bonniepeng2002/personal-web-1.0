@@ -21,8 +21,11 @@
     --footer-focus:  #ff97ff;
     --selection-color: #193a6d;
     --color1: white;
-    --color2: #fae1fa;
-    --color3:  rgb(239, 234, 241);
+    --color2: #cde3ff;
+    /* #fae1fa */
+    --color3:  #cde3ff
+    /* rgb(239, 234, 241) */
+    ;
     --color4: #cde3ff;
 }
 
@@ -109,7 +112,7 @@ body{
 }
 
 section{
-    padding: 3.9rem 0;
+    padding: 2.5rem 0;
     overflow: hidden;
 }
 
@@ -477,7 +480,7 @@ header{
 }
 
 .description{
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .description p{
@@ -511,7 +514,7 @@ header{
 .my-passions{
     background-color: var(--color2);
     left: 50%;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 }
 
 .passions{
@@ -519,7 +522,7 @@ header{
 }
 
 .description{
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 /* slideshow  */
@@ -680,7 +683,7 @@ header{
 .content{
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     float: left;
 }
 
@@ -766,7 +769,7 @@ header{
 
 
 .all-items{
-    margin-top: 5rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -819,6 +822,7 @@ header{
 
 .my-resume{
     background-color: var(--color4);
+    padding-bottom: 5rem;
 }
 
 .my-resume .global-headline{
@@ -910,7 +914,8 @@ header{
 /* Contact */
 
 footer{
-    padding: 5rem 0;
+    padding-bottom: 4rem;
+    padding-top: 3rem;
     background-color: var(--footer-color);
     color: white;
     text-align: center;
