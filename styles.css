@@ -35,7 +35,7 @@
     color:  #3a3939;
 }
 
-.loader-wrapper{
+/* .loader-wrapper{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -94,7 +94,7 @@ svg circle{
         stroke-dashoffset: 50;
         stroke-dasharray: 74;
     }
-}
+} */
 
 
 html{

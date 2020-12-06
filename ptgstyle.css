@@ -9,20 +9,33 @@
 }
 
 :root{
-    --main-font: 'Source Sans Pro', sans-serif;
+    --main-font: 'Source Sans Pro', 'Cabin', arial;
     --secondary-font: 'Cabin';
-    --body-font: 'Source Sans Pro', sans-serif;
+    --body-font: 'Source Sans Pro', 'Cabin', arial;
     --main-font-color-dark: #252525;
     --secondary-font-color: #d1ffff;
-    --body-font-color: #515151;
+    --body-font-color: #444444;
     --headline-font-color: #090938;
-    --jellyfish-pink: #ff33ff;
-    --jellyfish-blue: #00ffff;
     --resume-color:  #bde5ff;
-    --footer-color: hsl(207, 100%, 68%);
+    --footer-color: #1a3968;
     --footer-focus:  #ff97ff;
-    --passions-color: #f2cefd;
+    --selection-color: #193a6d;
+    --color1: white;
+    --color2: #fae1fa;
+    --color3:  rgb(239, 234, 241);
+    --color4: #cde3ff;
 }
+
+::selection {
+    background: var(--selection-color); /* WebKit/Blink Browsers */
+    color:  white;
+}
+::-moz-selection {
+    background: var(--selection-color); /* Gecko Browsers */
+    color:  #3a3939;
+}
+
+
 
 html{
     font-family: var(--body-font);
@@ -63,6 +76,7 @@ h2{
     max-width: 122.5rem;
     margin: 0 auto;
     padding: 0 2.4rem;
+    z-index: 9000;
 }
 
 /* header  */
@@ -71,8 +85,7 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.356), transparent);
+    z-index: 10000;
 }
 
 .nav{
@@ -157,46 +170,173 @@ header{
     font-size: 2.2rem;
     letter-spacing: 2px;
     margin-right: -2px;
+    padding-bottom: .3rem;
     transition: color .3s;
-}
-
-.nav-link:hover{
-    color: lightblue;
+    animation: grow 1s forwards;
 }
 
 
+/* hello */
 
+.hello{
+    width: 100%;
+    height: 100vh;
+    background: url("photography/DSC_0077.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 
-.sub-headline-dark{ /* hey you've found me / looking for */
+.sub-headline{ /*hello!*/
+    font-size: 10rem;
+    font-family: montserrat;
+    color: white;
+    font-weight: 80;
+    line-height: .4;
+    letter-spacing: 4px; 
+    opacity: 0;
+    animation: scale 1s forwards; 
+    animation-delay: .5s;
+}
+
+.headline{ /*my name is*/
+    color: white;
+    font-size: 3.8rem;
+    font-family: var(--main-font);
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeUp 1s forwards; 
+    animation-delay: 1s;  
+}
+
+.separator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* end of wave and intro  */
+
+/* line detail  */
+
+.line{
+    width: 100%;
+    max-width: 17rem;
+    height: .22rem;
+    background-color: var(--secondary-font-color);
+    position: relative;
+    opacity: 0;
+    animation: grow 2s forwards;
+    animation-delay: 1.7s;
+}
+
+.line-right::before,
+.line-left::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: .6rem solid transparent; 
+    opacity: 0; 
+    animation: grow 1s forwards;
+    animation-delay: 1.7s;  
+}
+
+.line-right::before{
+    border-right-color: var(--secondary-font-color);
+    right: 0;
+}
+
+.line-left::before{
+    border-left-color: var(--secondary-font-color);
+    left: 0;
+}
+
+.asterisk{
+    font-size: 2rem;
+    color: var(--secondary-font-color);
+    margin: 0 1.6rem;
+    opacity: 0;
+    animation: spin 1s forwards;
+    animation-delay: 1.4s;
+}
+
+/* end of line detail  */
+
+.headline-description h5{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    letter-spacing: 3px;
+}
+
+.single-animation{
+    opacity: 0;
+    animation: fadeDown 1s forwards; 
+    animation-delay: 2s; 
+}
+
+/* explore */
+
+.btn{
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
+    margin-top: 2.2rem;
+}
+
+.cta-btn{
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: white;
+    padding: .9rem 2rem;
+    color: var(--body-font-color);
+    border-radius: .9rem;
+    transition: background-color .5s;
+    margin-bottom: 2rem;
+}
+
+.cta-btn:hover,
+.cta-btn:focus{
+    color: white;
+    background-color: rgba(0,0,0,.6);
+}
+
+/* explore end */
+
+/* my story */
+
+.global-headline{
+    text-align: center;
+    margin-top: 3.9rem;
+}
+
+.my-story .global-headline{
+    margin-top: 6.9rem;
+}
+
+.global-headline .asterisk{
+    color: var(--headline-font-color);
+    margin: 2.4rem 0;
+    text-align: center;
+}
+
+.sub-headline-dark{ /* hey you've found me / looking for / my passions */
     font-size: 3rem;
     font-family: var(--secondary-font);
     font-weight: 750;
-    letter-spacing: .2rem;
-    margin-right: -.2rem;
+    text-align: center;
+    letter-spacing: .35rem;
 }
 
-/* i think this buttons below is unused could be used for smth else? */
 
-.body-btn::before{ /*about me*/
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 100%;
-    height: 2px;
-    background-color: var(--jellyfish-pink);
-    transition: background-color .5s;
-}
-
-.body-btn:hover,
-.body-btn:focus{
-    color: var(--main-font-color-dark);
-}
-
-.body-btn:hover::before,
-.body-btn:focus::before{
-    background-color: var(--main-font-color-dark);
-}
 
 /* Contact */
 
@@ -276,16 +416,18 @@ footer{
 
 /* media queries */
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 850px){
     section{
         padding: 7.9rem;
     }
+    
     .menu-toggle{
         display: none;
     }
     .nav{
         justify-content: space-between;
     }
+    
     .nav-list{
         position: initial;
         width: initial;
@@ -309,6 +451,14 @@ footer{
     .nav-link{
         font-size: 1.3rem;
     }
+    .nav-link:hover{
+        color: lightblue;
+        animation: grow 1s forwards;
+        border-bottom: 2px solid lightblue;
+    }
+    .nav-link .active {
+        border-bottom: 2px solid lightblue;
+    }
     .active{
         position: relative;
     }
@@ -327,20 +477,15 @@ footer{
     .headline{
         font-size: 4rem;
     }
+    .sub-headline-dark{
+        letter-spacing: .25rem;
+    }
     .line{
         max-width: 18rem;
     }
-    .info,
-    .seeking{
-        display: flex;
+    .description p{
+        font-size: 2.3rem;
     }
-    .info > div,
-    .seeking > div{
-        flex: 1;
-    }
-    .padding-right{
-        padding-right: 7rem;
-    
     .footer-content{
         max-width: 77.5rem;
         margin: auto;
@@ -420,7 +565,6 @@ footer{
         transform: translateY(-.65rem);
     }
 }
-
 
 /* .image-group{ ----------------- to make a 4x4 image grid class="image-group"
     display: grid;
