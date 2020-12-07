@@ -190,14 +190,14 @@ header{
     height: inherit;
     position: absolute;
     opacity: 0;
-    animation: cycleImages 41s infinite;
+    animation: cycleImages 29s infinite;
 }
 
 .slideshow-item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    animation: zoomIn 41s infinite;
+    animation: zoomIn 29s infinite;
 
 }
 
@@ -212,15 +212,15 @@ header{
 }
 .slideshow-item:nth-child(2),
 .slideshow-item:nth-child(2) img{
-    animation-delay: 10s;
+    animation-delay: 7s;
 }
 .slideshow-item:nth-child(3),
 .slideshow-item:nth-child(3) img{
-    animation-delay: 20s;
+    animation-delay: 14s;
 }
 .slideshow-item:nth-child(4),
 .slideshow-item:nth-child(4) img{
-    animation-delay: 30s;
+    animation-delay: 21s;
 }
 
 .slideshow-item-text{
