@@ -1154,7 +1154,11 @@ footer{
     }
 }
 
-
+@media screen and (min-width: 1400px){
+    .waveWrapperInner{
+        background-image: url("pictures/jellyfishbig.jpg");
+    }
+}
 
 /* ANIMATIONS  */
 
