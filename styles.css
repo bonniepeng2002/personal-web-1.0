@@ -112,8 +112,9 @@ body{
 }
 
 section{
-    padding: 2.5rem 0;
+    padding: 5rem 0;
     overflow: hidden;
+    margin-bottom: -.1rem;
 }
 
 img{
@@ -256,7 +257,7 @@ header{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -5px;
+    bottom: -20px;
     top: 0;
     margin-bottom: 2rem;
 
@@ -470,7 +471,7 @@ header{
     font-family: var(--secondary-font);
     font-weight: 750;
     text-align: center;
-    letter-spacing: .35rem;
+    letter-spacing: .21rem;
 }
 
 /* my story  */
@@ -822,7 +823,7 @@ header{
 
 .my-resume{
     background-color: var(--color4);
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
 }
 
 .my-resume .global-headline{
@@ -992,16 +993,16 @@ footer{
 
 @media screen and (min-width: 850px){
     section{
-        padding: 7.9rem;
+        padding: 7rem;
     }
     .wave{
         width: 370%;
     }
     .waveTop {
-        background-size: 50% 180px;
+        background-size: 50% 200px;
     }
     .waveMiddle {
-        background-size: 50% 260px;
+        background-size: 50% 280px;
     }
     .waveBottom {
         background-size: 50% 360px;
@@ -1152,6 +1153,8 @@ footer{
         margin: 0 1rem;
     }
 }
+
+
 
 /* ANIMATIONS  */
 
