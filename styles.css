@@ -694,14 +694,15 @@ header{
     padding: 1rem 0;
 }
 
-.column,
-.column2 {
+.column1,
+.column2,
+.column3 {
     flex: 100%;
     max-width: 100%;
 }
 
 .item{
-    padding: 1rem 1rem;
+    padding: .2rem .9rem;
     position: relative;
 }
 
@@ -1094,12 +1095,16 @@ footer{
     .screenshot{        
         margin: .5rem .5rem;
     }
-    .column{
-        flex: 29%;
+    .column1{
+        flex: 13%;
     }
     .column2{
-        flex:42%;
+        flex: 25%;
     }
+    .column3{
+        flex: 20%;
+    }
+    
 
     /* .proj li{
         display: inline;
