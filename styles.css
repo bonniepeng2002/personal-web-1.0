@@ -779,7 +779,7 @@ header{
 }
 
 .inspo{
-    background-color: white;
+    background-color:  #eeeeee;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
     font-size: 17px;
     display: inline-flex;
@@ -789,8 +789,9 @@ header{
     width: 95%;
     height: auto;
     margin: 1rem 0 1rem 0;
-    position: relative;
+    position: relative;    
 }
+
 
 .inspo img{
     width: auto;
@@ -836,7 +837,7 @@ header{
 }
 
 .my-resume .global-headline{
-    margin-top: 4.8rem;
+    margin-top: 3rem;
 }
 
 .resume{
