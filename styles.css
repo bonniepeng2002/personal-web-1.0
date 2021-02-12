@@ -497,7 +497,7 @@ header{
 
 .info-img img{
     border-radius: 15px;
-    width: 95%;
+    width: 85%;
     height: auto;
 }
 
@@ -818,6 +818,14 @@ header{
     color: var(--main-font-color-dark);
 }
 
+.last-update{
+    margin-top: 3rem;
+    color: var(--headline-font-color);
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+}
+
 /* inspirations end  */
 
 /* resume  */
@@ -828,7 +836,7 @@ header{
 }
 
 .my-resume .global-headline{
-    margin-top: 6.9rem;
+    margin-top: 4.8rem;
 }
 
 .resume{
@@ -1130,7 +1138,7 @@ footer{
         display: flex;
     }
     .info-img{
-        width: 90%;
+        width: 75%;
     }
     .info > div,
     .seeking > div{
